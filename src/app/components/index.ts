@@ -1,5 +1,5 @@
-export { Footer } from './Footer';
+export { TodoFooter } from './Archive/TodoFooter';
 export { Header } from './Header';
-export { TodoList } from './TodoList';
-export { TodoItem } from './TodoItem';
-export { TodoTextInput } from './TodoTextInput';
+export { TodoList } from './Archive/TodoList';
+export { TodoItem } from './Archive/TodoItem';
+export { TodoTextInput } from './Archive/TodoTextInput';

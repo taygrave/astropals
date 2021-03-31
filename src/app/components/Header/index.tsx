@@ -1,25 +1,9 @@
 import React from 'react';
-import { TodoTextInput } from '../TodoTextInput';
-import { TodoActions } from 'app/actions/todos';
 
-export namespace Header {
-  export interface Props {
-    addTodo: typeof TodoActions.addTodo;
-  }
-}
-
-export const Header = ({ addTodo }: Header.Props): JSX.Element => {
-  const handleSave = React.useCallback(
-    (text: string) => {
-      if (text.length) addTodo({ text });
-    },
-    [addTodo]
-  );
-
+export const Header = (): JSX.Element => {
   return (
     <header>
-      <h1>Trades</h1>
-      <TodoTextInput newTodo onSave={handleSave} placeholder="What needs to be done?" />
+      <h1>AstroPals</h1>
     </header>
   );
 };

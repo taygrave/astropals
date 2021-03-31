@@ -9,7 +9,7 @@ export const FILTER_TITLES = {
   [TodoModel.Filter.SHOW_COMPLETED]: 'Completed'
 };
 
-export namespace Footer {
+export namespace TodoFooter {
   export interface Props {
     filter: TodoModel.Filter;
     activeCount?: number;
@@ -19,13 +19,13 @@ export namespace Footer {
   }
 }
 
-export const Footer = ({
+export const TodoFooter = ({
   filter,
   activeCount,
   completedCount,
   onClickFilter,
   onClickClearCompleted
-}: Footer.Props): JSX.Element => {
+}: TodoFooter.Props): JSX.Element => {
   const renderTodoCount = React.useCallback((): JSX.Element => {
     const itemWord = activeCount === 1 ? ' item' : 'items';
     return (
